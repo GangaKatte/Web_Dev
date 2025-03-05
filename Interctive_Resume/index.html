@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganga Katte - Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f3f3f3, #c9d6ff);
+            color: #333;
+            text-align: center;
+        }
+
+        /* Header with Typing Effect */
+        header {
+            padding: 50px;
+            background: #222;
+            color: white;
+        }
+        .typing-effect {
+            border-right: 2px solid white;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3s steps(10) infinite alternate;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        /* Sections */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        /* Skill Bars */
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            background: #ddd;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .skills li:hover {
+            background: #4CAF50;
+            color: white;
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+        }
+        .timeline-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 3px solid #4CAF50;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="typing-effect">Ganga Katte</h1>
+        <p>Solapur, India | <a href="https://www.linkedin.com/in/gangakatte">LinkedIn</a> | +91 8459614205 | gangakatte883@gmail.com</p>
+
+    </header>
+    
+    <section class="education">
+        <h2>Professional Summary</h2>
+     
+        <p>
+        As an enthusiastic IT student explored 3rd year at Walchand Institute of Technology, I thrive on innovation and relish solving complex problems. My proficiency in Java, C, and Python, coupled with a solid foundation in frontend web development, positions me well for impactful contributions in the technology sector. I have a keen interest in artificial intelligence and machine learning, having engaged in projects that leverage data analytics and predictive modeling. I am eager to join a mission-driven organization committed to advancing technical innovations in the AI field.</p>
+    </section>
+    
+    <section class="education">
+        <h2>Education</h2>
+        <p>Walchand Institute of Technology</p>
+        <p>B.Tech in Information Technology | CGPA: 9.63 (2022-2026)</p>
+    </section>
+    
+    <section class="coursework">
+        <h2>Coursework</h2>
+        <ul>
+            <li>Python,Java</li>
+            <li>Data Structures and Algorithm</li>
+            <li>Web Development</li>
+            <li>Database Management</li>
+            <li>Data Science</li>
+        </ul>
+    </section>
+    
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python with Pandas, NumPy, Matplotlib, TensorFlow</li>
+            <li>Generative AI with Langchain</li>
+            <li>Power BI, SQL</li>
+            <li>Jupyter Notebook</li>
+            <li> Git, Docker</li>
+        </ul>
+    </section>
+    
+    <section class="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Python Developer Intern | Octanet</h3>
+                <p>July 2024 - Sep 2024</p>
+                <p>Interned as a Python Developer at Octanet, focusing on scalable and efficient solutions.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Web Developer Intern | Internship Studio</h3>
+                <p>Jan 2024 - Feb 2024</p>
+                <p>Developed dynamic web applications using HTML, CSS, JavaScript.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>AI-Powered Data Query Interface</h3>
+            <p>Built an AI-driven data query system using Google Generative AI and Langchain.</p>
+        </div>
+        <div class="project">
+            <h3>AI-Driven Crop Diseases Prediction System</h3>
+            <p>Developed an AI-based model to predict crop diseases with high accuracy using deep learning techniques.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Contact: gangakatte883@gmail.com</p>
+    </footer>
+</body>
+</html>
