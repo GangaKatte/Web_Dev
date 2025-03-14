@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Interactive Restaurant Menu</h1>
+
+    <div class="filters">
+        <button onclick="filterMenu('all')">All</button>
+        <button onclick="filterMenu('starter')">Starters</button>
+        <button onclick="filterMenu('main')">Main Course</button>
+        <button onclick="filterMenu('dessert')">Desserts</button>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="item starter" data-price="5">
+            <h3>Garlic Bread</h3>
+            <p>$5</p>
+            <button onclick="addToCart('Garlic Bread', 5)">Add to Cart</button>
+        </div>
+        <div class="item main" data-price="12">
+            <h3>Grilled Chicken</h3>
+            <p>$12</p>
+            <button onclick="addToCart('Grilled Chicken', 12)">Add to Cart</button>
+        </div>
+        <div class="item dessert" data-price="7">
+            <h3>Chocolate Cake</h3>
+            <p>$7</p>
+            <button onclick="addToCart('Chocolate Cake', 7)">Add to Cart</button>
+        </div>
+        <div class="item starter" data-price="6">
+            <h3>Spring Rolls</h3>
+            <p>$6</p>
+            <button onclick="addToCart('Spring Rolls', 6)">Add to Cart</button>
+        </div>
+        <div class="item main" data-price="15">
+            <h3>Steak</h3>
+            <p>$15</p>
+            <button onclick="addToCart('Steak', 15)">Add to Cart</button>
+        </div>
+        <div class="item dessert" data-price="8">
+            <h3>Ice Cream</h3>
+            <p>$8</p>
+            <button onclick="addToCart('Ice Cream', 8)">Add to Cart</button>
+        </div>
+    </div>
+
+    <h2>Shopping Cart</h2>
+    <ul id="cart-list"></ul>
+    <h3>Total: $<span id="total-price">0</span></h3>
+
+    <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
