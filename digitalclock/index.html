@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock with Themes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="clock-container">
+        <h1 id="time">00:00:00</h1>
+        <p id="date">Loading...</p>
+
+        <div class="theme-selector">
+            <button onclick="changeTheme('light')">Light Theme</button>
+            <button onclick="changeTheme('dark')">Dark Theme</button>
+            <button onclick="changeTheme('blue')">Blue Theme</button>
+            <input type="color" id="colorPicker" onchange="setCustomColor()" title="Pick a Color">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

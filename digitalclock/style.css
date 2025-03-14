@@ -1,0 +1,71 @@
+/* Default Theme */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background 0.5s, color 0.5s;
+    background: #f8f8f8;
+    color: #333;
+}
+
+.clock-container {
+    margin-top: 15%;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.theme-selector button, .theme-selector input {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.theme-selector button:nth-child(1) {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.theme-selector button:nth-child(2) {
+    background: #333;
+    color: white;
+}
+
+.theme-selector button:nth-child(3) {
+    background: #007BFF;
+    color: white;
+}
+
+.theme-selector button:hover {
+    opacity: 0.8;
+}
+
+/* Dark Theme */
+.dark-theme {
+    background: #222;
+    color: white;
+}
+
+/* Blue Theme */
+.blue-theme {
+    background: #007BFF;
+    color: white;
+}
+
+/* Custom Color Picker */
+#colorPicker {
+    width: 50px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
